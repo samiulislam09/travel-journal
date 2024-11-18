@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:travel_journal/app.dart';
-import 'package:travel_journal/screens/home/home.dart';
-import 'package:travel_journal/screens/signin/bloc/sign_in_bloc.dart';
-import 'package:travel_journal/screens/signin/signin.dart';
 
 void main() {
   runApp(const MyApp());
