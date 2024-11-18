@@ -6,8 +6,8 @@ import 'package:travel_journal/screens/signin/bloc/sign_in_bloc.dart';
 class SignIn extends StatelessWidget {
   SignIn({super.key});
 
-  TextEditingController emailControoller = TextEditingController();
-  TextEditingController passwordControlller = TextEditingController();
+  final TextEditingController emailControoller = TextEditingController();
+  final TextEditingController passwordControlller = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -89,6 +89,10 @@ class SignIn extends StatelessWidget {
                                       SignInButtonPressed(
                                           email: emailControoller.text,
                                           password: passwordControlller.text));
+                                  Navigator.pushReplacement(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => HomeScreen()));
                                 },
                                 style: ElevatedButton.styleFrom(
                                   backgroundColor: (state is SignInValidState)
